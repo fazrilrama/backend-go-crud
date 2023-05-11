@@ -3,6 +3,7 @@
 A minimalistic relational database library for Go.
 
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
+
 **Table of Contents**
 
 - [Install](#install)
@@ -11,8 +12,8 @@ A minimalistic relational database library for Go.
 - [Create](#create)
 - [CreateAndRead](#createandread)
 - [Read](#read)
-    - [Reading multiple rows:](#reading-multiple-rows)
-    - [Scanning to custom values:](#scanning-to-custom-values)
+  - [Reading multiple rows:](#reading-multiple-rows)
+  - [Scanning to custom values:](#scanning-to-custom-values)
 - [Update](#update)
 - [Delete](#delete)
 - [Contexts](#contexts)
@@ -27,14 +28,14 @@ A minimalistic relational database library for Go.
 ## Install
 
 ```bash
-$ go get github.com/azer/crud/v2
+$ go get github.com/fazrilrama/crud/v2
 ```
 
 ## Initialize
 
 ```go
 import (
-  "github.com/azer/crud/v2"
+  "github.com/fazrilrama/crud/v2"
   _ "github.com/go-sql-driver/mysql"
 )
 
@@ -105,13 +106,13 @@ Above example sets the type of the `Text` column as `varchar(140)`, makes it req
 
 Here is the list of the options that you can pass;
 
-* Types: `int`, `bigint`, `varchar`, `text`, `date`, `time`, `timestamp`
-* `auto-increment` / `autoincrement` / `auto_increment`
-* `primary-key` / `primarykey` / `primary_key`
-* `required`
-* `default='?'`
-* `name=?`
-* `table-name=?`
+- Types: `int`, `bigint`, `varchar`, `text`, `date`, `time`, `timestamp`
+- `auto-increment` / `autoincrement` / `auto_increment`
+- `primary-key` / `primarykey` / `primary_key`
+- `required`
+- `default='?'`
+- `name=?`
+- `table-name=?`
 
 If you'd like a struct field to be ignored by CRUD, choose `-` as options:
 
@@ -227,15 +228,15 @@ db := DB.WithContext(context.Background())
 
 Use `Begin` method of a `crud.DB` instance to create a new transaction. Each transaction will provide you following methods;
 
-* Commit
-* Rollback
-* Exec
-* Query
-* Create
-* CreateAndRead
-* Read
-* Update
-* Delete
+- Commit
+- Rollback
+- Exec
+- Query
+- Create
+- CreateAndRead
+- Read
+- Update
+- Delete
 
 ```go
 tx, err := DB.Begin(context.Background())
@@ -268,9 +269,9 @@ $ LOG=crud go run myapp.go
 
 ## Custom Queries
 
-````go
+```go
 result, err := DB.Query("DROP DATABASE yolo") // or .Exec
-````
+```
 
 ## Running Tests
 
@@ -280,9 +281,9 @@ DATABASE_URL="?" go test ./...
 
 ## What's Missing?
 
-* **Hooks:** I'm not sure if this is needed, but worths to consider.
-* **Foreign Keys:** [*](https://dev.mysql.com/doc/refman/5.7/en/create-table-foreign-keys.html)
-* **Make UTF-8 Default:** Looks like the default charset is not UTF8.
+- **Hooks:** I'm not sure if this is needed, but worths to consider.
+- **Foreign Keys:** [\*](https://dev.mysql.com/doc/refman/5.7/en/create-table-foreign-keys.html)
+- **Make UTF-8 Default:** Looks like the default charset is not UTF8.
 
 ## LICENSE
 
