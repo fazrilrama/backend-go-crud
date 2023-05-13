@@ -3,9 +3,9 @@ package crud
 import (
 	"reflect"
 
-	"github.com/azer/crud/v2/meta"
-	"github.com/azer/crud/v2/sql"
-	"github.com/azer/snakecase"
+	"github.com/fazrilrama/crud/v2/meta"
+	"github.com/fazrilrama/crud/v2/sql"
+	"github.com/fazrilrama/snakecase"
 )
 
 // Take any kind of struct and return a FieldIteration instance

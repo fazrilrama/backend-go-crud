@@ -4,7 +4,7 @@ import (
 	stdsql "database/sql"
 	"fmt"
 
-	"github.com/azer/crud/v2/sql"
+	"github.com/fazrilrama/crud/v2/sql"
 )
 
 func createAndGetResult(exec ExecFn, record interface{}) (stdsql.Result, error) {

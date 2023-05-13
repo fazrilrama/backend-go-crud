@@ -1,7 +1,7 @@
 package crud_test
 
 import (
-	"github.com/stretchr/testify/assert"
+	"github.com/fazrilrama/testify/assert"
 	"testing"
 )
 

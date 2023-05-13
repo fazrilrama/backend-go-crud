@@ -7,7 +7,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/azer/crud/v2"
+	"github.com/fazrilrama/crud/v2"
 	_ "github.com/go-sql-driver/mysql"
 )
 

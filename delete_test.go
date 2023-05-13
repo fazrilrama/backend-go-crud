@@ -3,7 +3,7 @@ package crud_test
 import (
 	"testing"
 
-	"github.com/stretchr/testify/assert"
+	"github.com/fazrilrama/testify/assert"
 )
 
 /*func TestDelete(t *testing.T) {

@@ -4,7 +4,7 @@ import (
 	"context"
 	stdsql "database/sql"
 
-	"github.com/azer/logger"
+	"github.com/fazrilrama/logger"
 )
 
 type WithContext struct {

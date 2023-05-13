@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/azer/crud/v2/meta"
+	"github.com/fazrilrama/crud/v2/meta"
 )
 
 func read(query QueryFn, scanTo interface{}, allparams []interface{}) error {

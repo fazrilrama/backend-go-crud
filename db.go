@@ -4,8 +4,8 @@ import (
 	"context"
 	stdsql "database/sql"
 
-	"github.com/azer/crud/v2/sql"
-	"github.com/azer/logger"
+	"github.com/fazrilrama/crud/v2/sql"
+	"github.com/fazrilrama/logger"
 	"github.com/labstack/gommon/random"
 )
 

@@ -3,8 +3,8 @@ package crud_test
 import (
 	"testing"
 
-	"github.com/azer/crud/v2"
-	"github.com/stretchr/testify/assert"
+	"github.com/fazrilrama/crud/v2"
+	"github.com/fazrilrama/testify/assert"
 )
 
 func TestFields(t *testing.T) {
